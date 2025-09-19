@@ -9,4 +9,5 @@ public class UserDetail {
     @Getter
     private Gender gender;
 
+
 }

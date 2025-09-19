@@ -19,12 +19,4 @@ public enum Gender {
         }
         throw new IllegalArgumentException("Invalid gender id: " + id);
     }
-
-    public int getId() {
-        return id;
-    }
-
-    public String getDisplayName() {
-        return displayName;
-    }
 }

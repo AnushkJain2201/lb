@@ -1,0 +1,36 @@
+package com.legalbreeze.entity;
+
+import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+@Entity
+@Table(name = "status")
+public class Status {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "status_id", nullable = false)
+    private int statusId;
+
+    @Column(name = "name", nullable = false)
+    private String name;
+
+    Status(int statusId, String name) {
+        this.statusId = statusId;
+        this.name = name;
+    }
+
+    // public static Status fromId(int id) {
+    // for (Status status : Status.values()) {
+    // if (status.id == id) {
+    // return status;
+    // }
+    // }
+    // throw new IllegalArgumentException("Invalid status id: " + id);
+    // }
+}
+
+// done

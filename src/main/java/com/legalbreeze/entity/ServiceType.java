@@ -1,4 +1,4 @@
-package com.lb.entities;
+package com.legalbreeze.entity;
 
 import lombok.Getter;
 
